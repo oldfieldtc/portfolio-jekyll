@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="/assets/css/styles.css">
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:700|Palanquin">
+	<title>{{ page.title }}</title>
+</head>
+<body>
+	{% include navigation.html %}
+
+	<main id="content-begin">
+        {{ content }}
+	</main>
+
+	{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,33 @@
+<header>
+    <nav class="header-container">
+        <span class="open-nav" id="navbar-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+        </span>
+
+        <div id="header-logo">
+            <div class="item-header">
+                <a href="/" id="anchor_logo"><img src="https://tommyoldfield-media.s3.eu-west-2.amazonaws.com/tommy-oldfield-logo-transparent.png" alt="Tommy Oldfield logo"></a>
+                <a href="/" id="anchor_logo_text">Tommy Oldfield</a>
+            </div>
+
+            <button id="navbar-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-4x"></i>
+            </button>
+        </div>
+
+        <ul id="nav-list" class="nav-hidden">
+
+            {% for item in site.data.navigation %}
+                <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
+
+
+            <!-- <li><a href="/about">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Uses</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+    
+</header>
