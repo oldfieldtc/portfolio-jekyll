@@ -1,6 +1,6 @@
 ---
 title: A Look at GitHub Copilot
-thumbnail: https://tommyoldfield-media.s3.eu-west-2.amazonaws.com/github-copilot.jpg
+thumbnail: https://assets.tommyoldfield.co.uk/github-copilot.jpg
 url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/09/14/a-look-at-github-copilot/
 category: Technology
 ---

@@ -1,6 +1,6 @@
 ---
 title: A look at web components
-thumbnail: https://tommyoldfield-media.s3.eu-west-2.amazonaws.com/web-components-logo.jpg
+thumbnail: https://assets.tommyoldfield.co.uk/web-components-logo.jpg
 url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
 category: Development
 ---
