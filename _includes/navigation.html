@@ -6,7 +6,13 @@
 
         <div id="header-logo">
             <div class="item-header">
-                <a href="/" id="anchor_logo"><img src="https://assets.tommyoldfield.co.uk/tommy-oldfield-logo-transparent.png" alt="Tommy Oldfield logo"></a>
+                <a href="/" id="anchor_logo">
+                    <picture>
+                        <source srcset="{{ site.assetUrl }}tommy-oldfield-logo-transparent.avif" type="image/avif">
+                        <source srcset="{{ site.assetUrl }}tommy-oldfield-logo-transparent.webp" type="image/webp">
+                        <img src="{{ site.assetUrl }}tommy-oldfield-logo-transparent.png" alt="Tommy Oldfield logo">
+                    </picture>
+                </a>
                 <a href="/" id="anchor_logo_text">Tommy Oldfield</a>
             </div>
 
