@@ -11,3 +11,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+exclude: ['node_modules']
+permalink: /blog/:title
+
+assetUrl: "https://assets.tommyoldfield.co.uk/"
