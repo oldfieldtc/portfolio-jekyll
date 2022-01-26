@@ -1,8 +1,9 @@
 ---
 title: A Look at GitHub Copilot
-thumbnail: https://assets.tommyoldfield.co.uk/github-copilot.jpg
+thumbnail: https://assets.tommyoldfield.co.uk/github-copilot
 url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/09/14/a-look-at-github-copilot/
-category: Technology
+external: true
+category: External Technology
 ---
 
 > This blog post was originally published on the [Digital Communications team blog](https://digitalcommunications.wp.st-andrews.ac.uk/2021/09/14/a-look-at-github-copilot/). 
