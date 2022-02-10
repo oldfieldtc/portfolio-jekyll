@@ -1,4 +1,19 @@
 ---
 layout: default
 ---
-<h1>{{ "Hello world!" | downcase }}</h1>
+<div class="home__about">
+    <div class="home__profile">
+        <h1>Hi, I'm Tommy Oldfield!</h1>
+        <p>
+            I'm a full-stack web developer from Dundee, Scotland.<br>
+            I currently work for the University of St Andrews.<br>
+            You can read more about me and my work, but stick around for blog posts about tutorials and tech.
+        </p>
+    </div>
+    <picture class="home__headshot">
+        <source srcset="{{ site.assetUrl }}tommy-headshot.avif" type="image/avif">
+        <source srcset="{{ site.assetUrl }}tommy-headshot.webp" type="image/webp">
+        <img src="{{ site.assetUrl }}tommy-headshot.jpeg" alt="Tommy Oldfield">
+    </picture>
+</div>
+
