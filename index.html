@@ -17,3 +17,8 @@ layout: default
     </picture>
 </div>
 
+<h2>Latest posts</h2>
+{% for post in site.posts limit:3 %}
+  {% include article-list.html %}
+{% endfor %}
+
