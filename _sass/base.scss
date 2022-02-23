@@ -297,6 +297,7 @@ main {
 	}
 }
 
+// Article list
 .article__list {
 	display: grid;
 	grid-template-columns: max-content 1fr;
@@ -332,6 +333,55 @@ main {
 		display: inline-block;
 	}
 }
+
+// Work grid
+.work__tile {
+	display: block;
+
+	max-width: 300px;
+	min-width: 100px;
+	max-height: 205px;
+	// height: auto;
+
+	margin: 10px 10px 20px 10px;
+	position: relative;
+	// border-radius: 5px;
+	box-shadow: 0 5px 6px 2px hsla(0, 0%, 0%, 0.2);
+	overflow: hidden;
+	text-align: center;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	h3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: var(--navy);
+		opacity: 0.95;
+		margin: 0;
+		color: white;
+		padding: 10px 0;
+	}
+	&:hover h3{
+		background: var(--navy);
+		opacity: 1;
+	}
+
+	&:focus-within{
+		box-shadow: 0 0 0 5px var(--navy);
+
+		h3 {
+			background: var(--navy);
+			opacity: 1;
+		}
+	}
+}
+
 
 // Footer
 footer {
