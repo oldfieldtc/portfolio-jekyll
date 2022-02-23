@@ -25,5 +25,8 @@ plugins:
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 url: "https://www.tommyoldfield.co.uk" # the base hostname & protocol for your site
+domain: tommyoldfield.co.uk
