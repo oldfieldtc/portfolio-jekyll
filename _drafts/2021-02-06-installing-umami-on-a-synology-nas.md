@@ -93,3 +93,4 @@ To reduce errors, remove the `node_modules` folder and the `package-lock.json` f
 rm package-lock.json`
 
 Next run `npm install` and once the dependencies and modules are installed successfully, run `npm run build`, then `pm2 start umami`.
+When I've updated Umami in the past, the page assets wouldn't load properly for me after running `npm run build`, then `pm2 start umami`. How I fixed this was to run `npm start` after `npm run build` then run `pm2 start umami`.
