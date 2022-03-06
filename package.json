@@ -17,6 +17,7 @@
   },
   "scripts": {
     "jekyll": "bundle exec jekyll serve",
+    "jekyll-drafts": "bundle exec jekyll serve --drafts",
     "bundle": "bundle update",
     "build": "webpack",
     "img": "node src/sharp.js"
