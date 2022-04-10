@@ -86,7 +86,7 @@ Once complete, a list with your current processes should show. You can view this
 <picture class="article__image">
     <source srcset="{{ site.assetUrl }}umami-pm2-list.avif" type="image/avif">
     <source srcset="{{ site.assetUrl }}umami-pm2-list.webp" type="image/webp">
-    <img src="{{ site.assetUrl }}umami-pm2-list.jpeg" alt="The list of processes output by PM2. The only process listed is Umami.">
+    <img src="{{ site.assetUrl }}umami-pm2-list.jpeg" alt="The list of processes output by PM2. The only process listed is Umami." loading="lazy">
 </picture>
 
 ### Updating
