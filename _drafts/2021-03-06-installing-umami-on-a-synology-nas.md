@@ -86,14 +86,16 @@ Once complete, a list with your current processes should show. You can view this
 <picture class="article__image">
     <source srcset="{{ site.assetUrl }}umami-pm2-list.avif" type="image/avif">
     <source srcset="{{ site.assetUrl }}umami-pm2-list.webp" type="image/webp">
-    <img src="{{ site.assetUrl }}umami-pm2-list.jpeg" alt="The list of processes output by PM2. The only process listed is Umami." loading="lazy">
-</picture>
+    <img src="{{ site.assetUrl }}umami-pm2-list.jpeg" alt="The list of processes output by PM2. The only process listed is Umami.">
+</picture
+
+Sometimes, `pm2 list` would show Umami as `stopped`, when it is still running. If you want to stop Umami, you can use the `ps -aef | grep node` command to show a list of currently running node processes. You can then use `kill -9 process-number` to stop running Umami. The process number is the first number that appears after `root`.
 
 ### Updating
 
 Stop the pm2 process with `pm2 stop umami` and back in the umami directory, run `git pull` to download the updated files.
 
-To reduce errors, remove the `node_modules` folder and the `package-lock.json` file in the terminal with:
+To reduce errors, remove the `node_modules` folder and the `package-lock.json` file first in the terminal with:
 
 `rm -rf node_modules/
 rm package-lock.json`
