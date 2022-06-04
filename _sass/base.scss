@@ -339,6 +339,12 @@ main {
 }
 
 // Work grid
+.work__grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .work__tile {
 	display: block;
 
@@ -383,6 +389,14 @@ main {
 			background: var(--navy);
 			opacity: 1;
 		}
+	}
+
+	&:nth-child(3) {
+		margin-right: 0;
+	}
+
+	&:nth-child(3n+1) {
+		margin-left: 0;
 	}
 }
 
