@@ -5,7 +5,7 @@ slug: university-of-st-andrews
 ---
 
 # University of St Andrews
-I'm incredibly lucky to work at the University of St Andrews as part of the [Digital Communications team](https://digitalcommunications.wp.st-andrews.ac.uk/) as a web developer since the beginning of 2020. I work on updating the website using TerminalFour, answer support calls, create and update collections in FunnelBack, and work on the WordPress multisite, which includes developing and updating the University WordPress theme, and developing plugins.
+I'm incredibly lucky to work at the University of St Andrews as part of the [Digital Communications team](https://digitalcommunications.wp.st-andrews.ac.uk/) as a web developer since the beginning of 2020. I work on updating the website using TerminalFour, answer support calls, create and update collections in Funnelback, and work on the WordPress multisite, which includes developing and updating the University WordPress theme, and developing plugins.
 
 ## WordPress
 The majority of my work at the University involves developing for and being responsible for over 800 sites on the University's WordPress multisite. Through this, I have helped develop accessible themes and plugins to ensure cookie data is consistent across the University website, and to help the team with the maintenance and auditing of the multisite.
@@ -17,7 +17,7 @@ Bespoke child themes have also been developed for the [news](https://news.st-and
 
 ### Plugins
 #### Multisite audit
-Keeping up to date with over 800 sites is a tough task. Before joining the team, the entire WordPress multisite was audited every 6 months or so and the data was kept in a manually updated spreadsheet. To help with the maintenance, I developed a plugin that allows super admins to audit the multisite and download the data in a spreadsheet. Based on the University's [WordPress policy](https://www.st-andrews.ac.uk/digital-standards/policies/wordpress/), the plugin gathers data on:
+Keeping up to date with over 800 sites is a tough task. Before joining the team, the entire WordPress multisite was audited every 6 months or so and the data was kept in a manually updated spreadsheet. To help with the maintenance, I developed a plugin that allows super admins to audit the multisite and download the data as a spreadsheet. Based on the University's [WordPress policy](https://www.st-andrews.ac.uk/digital-standards/policies/wordpress/), the plugin gathers data on:
 
 - every website on the multisite - including admins, active plugins, theme, creation date, last updated date.
 - sites that have been created but no content has been added within the first 3 months of the creation date

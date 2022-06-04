@@ -35,13 +35,6 @@
       <dl class="article__metadata">
         <dt><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i></dt>
         <dd>{{ post.date | date: "%-d %B %Y" }}</dd>
-
-        <dt><i class="far fa-folder-open" aria-hidden="true" title="Categories"></i></dt>
-        <dd>
-          {% for category in post.categories %}
-            <a href="/category/{{ category | downcase }}">{{ category }}</a>
-          {% endfor %}
-        </dd>
       </dl>
     </div>
   </article>
