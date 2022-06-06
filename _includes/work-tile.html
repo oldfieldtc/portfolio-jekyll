@@ -3,7 +3,7 @@
         <picture class="work__thumbnail">
             <source srcset="{{ site.assetUrl }}{{ include.image }}.avif" type="image/avif">
             <source srcset="{{ site.assetUrl }}{{ include.image }}.webp" type="image/webp">
-            <img src="{{ site.assetUrl }}{{ include.image }}.jpeg" alt="University of St Andrews homepage shown on a laptop." loading="lazy">
+            <img src="{{ site.assetUrl }}{{ include.image }}.jpeg" alt="{{include.alt}}" loading="lazy">
         </picture>
         <h3>{{ include.title }}</h3>
     </a>
