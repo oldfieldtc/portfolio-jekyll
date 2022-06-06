@@ -110,6 +110,7 @@ header {
 .logo__wrapper {
 	display: grid;
 	grid-template-columns: max-content 1fr max-content;
+	margin: 10px 0;
 }
 
 .logo {
@@ -150,19 +151,14 @@ header {
 	.logo__image {
 		picture {
 			img {
-				width: 110px;
-				height: 110px;
+				width: 75px;
+				height: 75px;
 				display: block;
 			}
-	
-			&:hover {
-				outline: 2px solid var(--white);
-			}
+		}
 
-			&:focus {
-				filter: invert(100%);
-			}
-
+		&:focus {
+			outline: 2px solid rgb(237, 235, 235);
 		}
 	}
 }
@@ -470,15 +466,9 @@ footer {
 	// Header
 	header, main {
 		grid-template-columns: 1fr;
-	}
-	.header__wrapper {
-		grid-column: 1 / -1;
-	}
-	main {
 		padding: 0 20px;
 	}
-
-	.container {
+	.header__wrapper, .container {
 		grid-column: 1 / -1;
 	}
 
