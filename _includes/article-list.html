@@ -17,7 +17,12 @@
     </figure>
 
     <div class="article__content">
-      <h2><a href="
+      {% if page.url == "/" %}
+      <h3>
+      {% else %}
+      <h2>
+      {% endif %}
+        <a href="
         {% if post.external == true %}
           {{ post.ext-url }}
         {% else %}
@@ -28,7 +33,12 @@
           class="article__external"
         {% endif %}
         >{{ post.title }}  
-      </a></h2>
+      </a>
+      {% if page.url == "/" %}
+      </h2>
+      {% else %}
+      </h2>
+      {% endif %}
 
       <p class="article__excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 50 }}</p>
 
