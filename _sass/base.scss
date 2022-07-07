@@ -40,6 +40,7 @@ html {
 
 body {
 	height: 100vh;
+	line-height: 1.5em;
 
 	display: grid;
 	// grid-template-columns: 1fr 960px 1fr;
@@ -83,6 +84,33 @@ body {
 		font-size: 2em;
 	}
 }
+
+/* Skip to content link */
+nav[aria-label="Accessibility links"] {
+	// display: block;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+
+	&:focus-within {
+		position: fixed;
+		height: auto;
+		width: auto;
+		margin: 0;
+		overflow: visible;
+		a {
+			display: block;
+			margin: 3px 0 0 3px;
+			padding: 10px 15px;
+			outline: 3px solid #E6AF2E;
+			font-size: 1.2em;
+			box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
+		}
+	}
+}
+
 
 /* HEADER */
 header {
