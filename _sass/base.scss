@@ -3,6 +3,7 @@
 	--blue_accent: #4059B5;
 	--white: rgb(252, 252, 252);
 	--off_white: rgb(237, 235, 235);
+	--sub-text: #6A6A6A;
 	--center: 960px;
 	--font_head: montserrat; 
 	--font_body: lato; 
@@ -150,7 +151,6 @@ header {
 	.logo__text {
 		color: var(--white);
 		text-decoration: none;
-		// font-size: 40px;
 		text-transform: uppercase;
 
 		&:link {
@@ -173,6 +173,7 @@ header {
 		&:focus {
 			outline: 2px solid rgb(237, 235, 235);
 			text-decoration: none;
+			padding: 5px 0;
 		}
 	}
 	
@@ -316,6 +317,7 @@ main {
 	width: 150px;
 	height: auto;
 	justify-self: end;
+	
 
 	source, img {
 		height: 100%;
@@ -337,6 +339,7 @@ main {
 		display: block;
 		width: 300px;
 	}
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 .article__content {
@@ -349,6 +352,7 @@ main {
 
 	dt, dd {
 		margin-right: 5px;
+		color: var(--sub-text);
 	}
 }
 
@@ -358,6 +362,7 @@ main {
 		font-weight: 900;
 		content: "\f35d";
 		display: inline-block;
+		font-size: 0.75em;
 	}
 }
 
@@ -379,7 +384,7 @@ main {
 	margin: 10px 10px 20px 10px;
 	position: relative;
 	// border-radius: 5px;
-	box-shadow: 0 5px 6px 2px hsla(0, 0%, 0%, 0.2);
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 	overflow: hidden;
 	text-align: center;
 
@@ -445,45 +450,37 @@ footer {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	color: var(--white);
 
 	li {
 		display: inline-block;
-		width: 68px;
-		height: 68px;
-		padding: 5px;
 		box-sizing: initial;
+		margin: 0 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		a {
-			width: 100%;
+			color: var(--white);
+			padding: 12px 18px;
 			box-sizing: initial;
 			display: block;
-			span {
-				box-sizing: initial;
-			}
-		}
-
-		.fa-stack {
-			height: 64px;
-			width: 64px;
-			border: 2px solid var(--white);
-			border-radius: 50%;
+			width: 40px;
 
 			&:hover {
-				border: 2px solid var(--navy);
-			
-				.fa-circle {
-					color: var(--white);
-				}
-				.fa-inverse {
-					color: var(--navy);
-				}
+				opacity: 0.8;
+			}
+
+			&:active {
+				opacity: 1;
 			}
 		}
 
-		.fa-circle {
-			color: var(--navy);
-		}
+		
 	}
 }
 
