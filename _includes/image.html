@@ -1,0 +1,5 @@
+<picture>
+    <source srcset="{{ site.assetUrl }}{{ include.filename }}.avif" type="image/avif">
+    <source srcset="{{ site.assetUrl }}{{ include.filename }}.webp" type="image/webp">
+    <img src="{{ site.assetUrl }}{{ include.filename }}.jpeg" alt="{{ include.alt }}" loading="lazy">
+</picture>
