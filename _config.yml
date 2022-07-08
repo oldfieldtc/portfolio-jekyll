@@ -29,5 +29,14 @@ whitelist:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-url: "https://www.tommyoldfield.co.uk" # the base hostname & protocol for your site
+# SEO
+title: Tommy Oldfield | Full-Stack Web Developer | Dundee, Scotland
+url: https://www.tommyoldfield.co.uk # the base hostname & protocol for your site
 domain: tommyoldfield.co.uk
+logo: https://assets.tommyoldfield.co.uk/tommy-oldfield-logo-small.png
+social:
+  name: Tommy Oldfield
+  links:
+    - https://www.linkedin.com/in/tommyoldfield/
+    - https://github.com/oldfieldtc
+locale: en_GB
