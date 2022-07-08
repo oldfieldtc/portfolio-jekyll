@@ -41,8 +41,6 @@ html {
 
 body {
 	height: 100vh;
-	line-height: 1.5em;
-
 	display: grid;
 	// grid-template-columns: 1fr 960px 1fr;
 	grid-template-rows: max-content 1fr max-content;
@@ -580,6 +578,17 @@ footer {
 
 	button[aria-controls="nav-list"] {
 		display: block;
+	}
+
+	.work__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		gap: 20px;
+		justify-items: center;
+	}
+
+	.work__tile {
+		margin: 0;
 	}
 }
 
