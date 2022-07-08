@@ -3,7 +3,7 @@ title: A look at web components
 thumbnail: https://assets.tommyoldfield.co.uk/web-components-logo
 ext-url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
 redirect_to: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
-# external: true
+external: true
 categories: ['External', 'Development']
 excerpt: On the surface, web components look like an easy way to create and reuse elements and patterns for websites, but how easy are they to set up and use?
 ---
