@@ -43,7 +43,7 @@
       <p class="article__excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 50 }}</p>
 
       <dl class="article__metadata">
-        <dt><i class="far fa-calendar-alt" aria-hidden="true" title="Date"></i></dt>
+        <dt><i class="fa-solid fa-calendar-days" aria-hidden="true" title="Date"></i></dt>
         <dd>{{ post.date | date: "%-d %B %Y" }}</dd>
       </dl>
     </div>
