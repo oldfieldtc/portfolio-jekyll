@@ -273,8 +273,9 @@ main {
 		}
 	}
 
-	img {
+	picture, source, img {
 		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -335,9 +336,8 @@ main {
 .article__thumbnail {
 	img {
 		display: block;
-		width: 300px;
+		box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 	}
-	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 .article__content {

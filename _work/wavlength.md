@@ -9,11 +9,11 @@ Wavlength was a web application that allowed users to generate playlists based o
 
 Wavlength was developed as my final project for <abbr title="CS50's Web Programming with Python and JavaScript course">CS50w</abbr> and was built using [Django](https://www.djangoproject.com/), the [Apple Music API](https://developer.apple.com/documentation/applemusicapi), and the [Last.fm API](https://www.last.fm/api).
 
-{% include image.html filename="wavlength-homepage" alt="Homepage of the Wavlength web app." %}
+{% include image.html filename="wavlength-homepage" alt="Homepage of the Wavlength web app." width="838" height="831" %}
 
 Users could log into their Apple Music account through the Apple Music API and once logged in, they would be presented with two playlist choices: "For you condensed", and "Recent recommendations".
 
-{% include image.html filename="wavlength-playlists" alt="The 'Choose a playlist' page in the Wavlength app. Two tiles are displayed: For you condensed - A playlist that picks one song from every album listed on the 'For You' section in Apple Music; Recent recommendations - A playlist that picks songs from similar artists based on the user's recent listening activity." %}
+{% include image.html filename="wavlength-playlists" alt="The 'Choose a playlist' page in the Wavlength app. Two tiles are displayed: For you condensed - A playlist that picks one song from every album listed on the 'For You' section in Apple Music; Recent recommendations - A playlist that picks songs from similar artists based on the user's recent listening activity." width="757" height="429" %}
 
 Selecting the "For you condensed" tile generates a playlist consisting of one song from each of the albums in Apple Music's "For you" section. Selecting the "Recent recommendations" tile generates a playlist that picks songs from similar artists based on the user's recent listening activity. The similar artists are chosen through the Last.fm API and the chosen song is picked from the artist's popular songs.
 
