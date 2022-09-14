@@ -7,11 +7,15 @@
       {% else %}
         {{ post.url }}
       {% endif %}
-      " tabindex="-1">
-        <picture>
+      " tabindex="-1"
+      {% if post.external == true %}
+        class="umami--click--{{ post.slug }}"
+      {% endif %}
+      >
+        <picture width="300px" height="200px">
           <source srcset="{{ post.thumbnail }}.avif" type="image/avif">
           <source srcset="{{ post.thumbnail }}.webp" type="image/webp">
-          <img src="{{ post.thumbnail }}.jpeg" loading="lazy" alt="">
+          <img src="{{ post.thumbnail }}.jpeg" loading="lazy" alt="{{ post.title }} post thumbnail" width="300px" height="200px">
         </picture>
       </a>
     </figure>
@@ -30,7 +34,7 @@
         {% endif %}
         "
         {% if post.external == true %}
-          class="article__external"
+          class="article__external umami--click--{{ post.slug }}"
         {% endif %}
         >{{ post.title }}  
       </a>
