@@ -1,3 +1,4 @@
+/* CSS custom properties */
 :root {
 	--navy: #1C2750;
 	--blue_accent: #4059B5;
@@ -9,6 +10,7 @@
 	--font_body: lato; 
 }
 
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,16 +23,9 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, picture {
 	margin: 0;
 	padding: 0;
-}
-
-html {
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
-	box-sizing: border-box;
 }
 
 code {
@@ -42,11 +37,20 @@ code {
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+	box-sizing: border-box;
+}
+
+img, picture {
+	max-width: 100%;
+	display: block;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
 }
 
 body {
-	height: 100vh;
+	min-height: 100vh;
 	display: grid;
 	// grid-template-columns: 1fr 960px 1fr;
 	grid-template-rows: max-content 1fr max-content;
@@ -54,10 +58,11 @@ body {
 		"header"
 		"content"
 		"footer";
+	background-color: var(--white);
 
 	font-family: var(--font_body), Arial, sans-serif;
-	background-color: var(--white);
 	color: black;
+	line-height: 1.5;
 	a {
 		color: #335EF3;
 		text-decoration: underline;
@@ -92,7 +97,6 @@ body {
 
 /* Skip to content link */
 nav[aria-label="Accessibility links"] {
-	// display: block;
 	position: absolute;
 	height: 1px;
 	width: 1px;
@@ -117,7 +121,7 @@ nav[aria-label="Accessibility links"] {
 }
 
 
-/* HEADER */
+/* Header */
 header {
 	background: var(--navy);
 	color: var(--white);
@@ -186,7 +190,6 @@ header {
 			img {
 				width: 75px;
 				height: 75px;
-				display: block;
 			}
 		}
 
@@ -280,7 +283,6 @@ main {
 	}
 
 	picture, source, img {
-		max-width: 100%;
 		height: auto;
 	}
 }
@@ -322,7 +324,6 @@ main {
 	width: 150px;
 	height: auto;
 	justify-self: end;
-	
 
 	source, img {
 		height: 100%;
@@ -341,7 +342,6 @@ main {
 
 .article__thumbnail {
 	img {
-		display: block;
 		box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 	}
 }
@@ -387,13 +387,11 @@ main {
 
 	margin: 10px 10px 20px 10px;
 	position: relative;
-	// border-radius: 5px;
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
 	overflow: hidden;
 	text-align: center;
 
 	img {
-		display: block;
 		width: 100%;
 		height: auto;
 	}
@@ -490,6 +488,22 @@ footer {
 
 /* Media Queries */
 
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
 @media screen and (max-width: 992px){
 	// Header
 	header, main {
@@ -506,7 +520,6 @@ footer {
 
 	.article__thumbnail {
 		img {
-			max-width: 100%;
 			height: auto;
 		}
 	}
@@ -622,7 +635,6 @@ footer {
 @media screen and (max-width: 480px) {
 	.home__about {
 		grid-template-columns: 1fr;
-		// justify-items: center;
 	}
 	.home__headshot {
 		justify-self: center;
