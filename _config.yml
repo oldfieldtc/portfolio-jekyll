@@ -23,6 +23,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-feed
 
 whitelist:
   - jekyll-redirect-from
@@ -39,3 +40,4 @@ social:
     - https://www.linkedin.com/in/tommyoldfield/
     - https://github.com/oldfieldtc
 locale: en_GB
+author: Tommy Oldfield

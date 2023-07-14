@@ -8,9 +8,6 @@ description: In 2022, I decided to revamp my website and delve into the JAMstack
 image: https://assets.tommyoldfield.co.uk/website-mbp-mockup.jpeg
 type: Article
 ---
-
-<!-- {% include image.html filename="website-mbp-mockup" %} -->
-
 It was time for a change. I had built my first portfolio site in 2019 after completing [CS50's Web Development course](/work/cs50) but it had slowly become outdated and was in need of a revamp. I had built the site using [Flask](https://flask.palletsprojects.com), a Python framework, and hosted it on Heroku's free tier, but as I didn't update it often and had since moved away from Python to PHP, updating it had become a hassle.
 
 In 2020, I toyed with the idea of rebuilding my portfolio site using another Python framework, [Django](https://www.djangoproject.com/), as I wanted to have a blog and other CMS functionality. As soon as I got [Wagtail](https://wagtail.org/) up and running and began prototyping the site, I lost interest in the project.
