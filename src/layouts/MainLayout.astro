@@ -1,0 +1,33 @@
+---
+import MainHead from "./MainHead.astro";
+import MainFooter from "./MainFooter.astro";
+import MainNavigation from "./MainNavigation.astro";
+
+import '../styles/base.css';
+
+interface Props {
+	title: string;
+	titleDescription: string;
+}
+
+const {
+	title = "",
+	titleDescription = "Tommy Oldfield, Full-Stack Web Developer from Dundee, Scotland"
+} = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<MainHead title={title} titleDescription={titleDescription}/>
+<MainNavigation />
+<body>
+
+	<main id="content-begin">
+		<div class="container">
+			<slot></slot>
+		</div>
+	</main>
+
+<MainFooter />
+</body>
+</html>

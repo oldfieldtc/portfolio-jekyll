@@ -1,0 +1,25 @@
+---
+// TODO: Make height, width, and className optional
+interface Props {
+    className: string;
+    width: number;
+    height: number;
+    filename: string;
+    altText: string;
+}
+
+const {
+    className = "",
+    width,
+    height,
+    filename = "",
+    altText = ""
+} = Astro.props as Props;
+const assetUrl : string = "https://assets.tommyoldfield.co.uk/";
+---
+
+<picture class={className} width=`${width}px` height=`${height}px`>
+    <source srcset=`${assetUrl}${filename}.avif` type="image/avif">
+    <source srcset=`${assetUrl}${filename}.webp` type="image/webp">
+    <img src=`${assetUrl}${filename}.jpeg` alt={altText} loading="lazy" width=`${width}px` height=`${height}px`>
+</picture>

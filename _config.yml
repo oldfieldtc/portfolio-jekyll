@@ -17,19 +17,6 @@ defaults:
 exclude: ['node_modules', '/src/', 'webpack.config.js', 'package-lock.json', 'package.json', '*.key', '*.pem']
 permalink: /blog/:title
 
-assetUrl: "https://assets.tommyoldfield.co.uk/"
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-feed
-
-whitelist:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
 # SEO
 url: https://www.tommyoldfield.co.uk # the base hostname & protocol for your site
 domain: tommyoldfield.co.uk

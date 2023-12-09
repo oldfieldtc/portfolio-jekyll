@@ -1,0 +1,11 @@
+---
+import MainMeta from "./MainMeta.astro";
+
+const { title, titleDescription } = Astro.props;
+---
+<head>
+    <MainMeta />
+
+    <link rel="stylesheet" href="https://use.typekit.net/hke8rff.css">
+    <title>{`${title} ${titleDescription}`}</title>
+</head>

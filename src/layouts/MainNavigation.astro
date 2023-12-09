@@ -1,3 +1,6 @@
+---
+import Image from "../components/Image.astro";
+---
 <nav aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
 <header>
     <div class="header__wrapper">
@@ -5,11 +8,7 @@
         <div class="logo__wrapper">
             <div class="logo">
                 <a href="/" class="logo__image">
-                    <picture>
-                        <source srcset="{{ site.assetUrl }}tommy-oldfield-logo-small.avif" type="image/avif">
-                        <source srcset="{{ site.assetUrl }}tommy-oldfield-logo-small.webp" type="image/webp">
-                        <img src="{{ site.assetUrl }}tommy-oldfield-logo-small.png" alt="Tommy Oldfield logo">
-                    </picture>
+                    <Image filename="tommy-oldfield-logo-small" altText="Tommy Oldfield logo" />
                 </a>
                 <a href="/" class="logo__text">Tommy Oldfield</a>
             </div>
@@ -21,11 +20,9 @@
 
         <nav class="header__navigation" id="nav-list" aria-expanded="false">
             <ul>
-                {% for item in site.data.navigation %}
-                    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-                {% endfor %}
+
             </ul>
         </nav>
-        
+
     </div>
 </header>
