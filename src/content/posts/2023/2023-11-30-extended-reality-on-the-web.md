@@ -1,15 +1,16 @@
 ---
 title: Extended reality (XR) on the web
-thumbnail: https://assets.tommyoldfield.co.uk/man-using-vr-headset
-external: true
-ext-url: https://digitalcommunications.wp.st-andrews.ac.uk/2023/11/30/extended-reality-xr-on-the-web/
-redirect_to: https://digitalcommunications.wp.st-andrews.ac.uk/2023/11/30/extended-reality-xr-on-the-web/
-categories: ['External', 'Extended reality']
-excerpt: Extended reality (XR) is gaining more attention thanks to new headsets from Apple and Meta alongside AR apps like Snapchat and Pokémon Go on smartphones, but how can universities take advantage of this technology?
-#SEO
+pubDate: 2023-11-30
 description: Extended reality (XR) is gaining more attention thanks to new headsets from Apple and Meta alongside AR apps like Snapchat and Pokémon Go on smartphones, but how can universities take advantage of this technology?
-image: https://assets.tommyoldfield.co.uk/man-using-vr-headset.jpeg
-type: Article
+author: Tommy Oldfield
+image:
+  filename: man-using-vr-headset
+  alt: Man wearing a VR headset
+external:
+  isExternal: true
+  url: https://digitalcommunications.wp.st-andrews.ac.uk/2023/11/30/extended-reality-xr-on-the-web/
+categories: ['External', 'Extended reality']
+tags: ["Augmented reality", "Virtual reality", "Mixed reality", "WebXR"]
 ---
 
 This post was originally posted on the [Digital Communications blog](https://digitalcommunications.wp.st-andrews.ac.uk/).

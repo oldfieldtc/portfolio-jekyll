@@ -1,11 +1,17 @@
 ---
 title: A look at web components
-thumbnail: https://assets.tommyoldfield.co.uk/web-components-logo
-ext-url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
-redirect_to: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
-external: true
+slug: a-look-at-web-components
+pubDate: 2021-07-29
+description: On the surface, web components look like an easy way to create and reuse elements and patterns for websites, but how easy are they to set up and use?
+author: Tommy Oldfield
+image:
+  filename: web-components-logo
+  alt: The HTML 5 and JavaSript logos superimposed on a layer of Lego.
+external:
+  isExternal: true
+  url: https://digitalcommunications.wp.st-andrews.ac.uk/2021/07/29/a-look-at-web-components/
 categories: ['External', 'Development']
-excerpt: On the surface, web components look like an easy way to create and reuse elements and patterns for websites, but how easy are they to set up and use?
+tags: ["HTML", "JavaScript"]
 ---
 
 Although web components have been around for several years in the web development world, it hasn’t been something that I’ve heard mentioned a lot. On the surface, web components look like an easy way to create and reuse elements and patterns for websites. But how easy are they to set up and use?
@@ -70,4 +76,3 @@ This look into web components has coincided with the start of DPL 2.0 developmen
 
 - [Web Components – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 - [Building Custom Elements with Web Components for the 2020 Elections](https://medium.com/stories-from-upstatement/building-custom-elements-with-web-components-for-the-2020-elections-f767ff9e9c6a)
-

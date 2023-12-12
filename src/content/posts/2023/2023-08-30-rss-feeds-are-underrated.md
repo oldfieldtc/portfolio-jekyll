@@ -1,12 +1,16 @@
 ---
+slug: rss-feeds-are-underrated
 title: RSS feeds are underrated
-thumbnail: https://assets.tommyoldfield.co.uk/rss-is-underrated
-external: false
-excerpt: With the shutdown of third-party apps for Reddit, I took a look at RSS, the 20+ year old technology to help me keep up to date with the world.
-#SEO
+pubDate: 2023-08-30
 description: With the shutdown of third-party apps for Reddit, I took a look at RSS, the 20+ year old technology to help me keep up to date with the world.
-image: https://assets.tommyoldfield.co.uk/rss-is-underrated.jpeg
-type: Article
+author: Tommy Oldfield
+image:
+  filename: rss-is-underrated
+  alt: RSS logo on top of FreshRSS screenshot
+external:
+  isExternal: false
+categories: ['Self-hosted', 'RSS']
+tags: ['FreshRSS']
 ---
 Recently, I had been reading [Cal Newport’s ‘Digital Minimalism’](https://www.penguin.co.uk/books/308636/digital-minimalism-by-newport-cal/9780241453575) in an effort to reduce my overall screen time and to stop [phubbing](https://en.wikipedia.org/wiki/Phubbing) the people around me. With the recent API changes and subsequent shutdown of third-party apps for Reddit (RIP Apollo), I felt that this was the perfect time to delete all social media apps from my phone and try to take back control of my time. This left me with a problem. How was I going to keep up to date with what’s going on in the world?
 

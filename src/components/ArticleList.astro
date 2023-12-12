@@ -1,0 +1,39 @@
+---
+import Image from "./Image.astro";
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  post: CollectionEntry<"posts">
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, categories, image, external } = post.data;
+const pathName = Astro.url.pathname;
+const postURL = external.isExternal ? external.url : `/blog/${post.slug}`;
+---
+
+<article class="article__list">
+
+    <figure class="article__thumbnail">
+      <a href=`${postURL}` tabindex="-1">
+        <Image filename={image.filename} altText={image.alt} width="300" height="200" />
+      </a>
+    </figure>
+
+    <div class="article__content">
+      <a href=`${postURL}`>
+        { pathName === '/' ? <h3>{title}</h3> : <h2>{title}</h2> }
+      </a>
+      <p class="article__excerpt">{description}</p>
+
+      <dl class="article__metadata">
+        <dt><i class="fa-solid fa-calendar-days" aria-hidden="true" title="Date"></i></dt>
+        <dd>{ pubDate.toLocaleDateString('en-GB', {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          timeZone: "UTC"
+        }) }</dd>
+      </dl>
+    </div>
+  </article>

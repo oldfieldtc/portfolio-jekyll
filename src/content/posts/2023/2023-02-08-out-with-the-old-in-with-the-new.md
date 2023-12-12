@@ -1,12 +1,15 @@
 ---
 title: Out with the old, in with the new
-thumbnail: https://assets.tommyoldfield.co.uk/website-mbp-mockup
-external: false
-excerpt: In 2022, I decided to revamp my website and delve into the JAMstack. Out with the old and in with the new!
-#SEO
+pubDate: 2023-02-08
 description: In 2022, I decided to revamp my website and delve into the JAMstack. Out with the old and in with the new!
-image: https://assets.tommyoldfield.co.uk/website-mbp-mockup.jpeg
-type: Article
+author: Tommy Oldfield
+image:
+  filename: website-mbp-mockup
+  alt: Someone sitting at a desk with a laptop, tablet, and phone all with my website displayed.
+external:
+  isExternal: false
+categories: ["Work"]
+tags: ["Jekyll", "Portfolio"]
 ---
 It was time for a change. I had built my first portfolio site in 2019 after completing [CS50's Web Development course](/work/cs50) but it had slowly become outdated and was in need of a revamp. I had built the site using [Flask](https://flask.palletsprojects.com), a Python framework, and hosted it on Heroku's free tier, but as I didn't update it often and had since moved away from Python to PHP, updating it had become a hassle.
 
