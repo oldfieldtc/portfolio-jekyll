@@ -1,6 +1,7 @@
 ---
 import Image from "./Image.astro";
 import type { CollectionEntry } from "astro:content";
+import { ExternalLink, CalendarDays } from "lucide-astro";
 
 type Props = {
   post: CollectionEntry<"posts">
@@ -10,10 +11,9 @@ const { post } = Astro.props;
 const { title, description, pubDate, categories, image, external } = post.data;
 const pathName = Astro.url.pathname;
 const postURL = external.isExternal ? external.url : `/blog/${post.slug}`;
+const TitleHeading = pathName === '/' ? "h3" : "h2";
 ---
-
 <article class="article__list">
-
     <figure class="article__thumbnail">
       <a href=`${postURL}` tabindex="-1">
         <Image filename={image.filename} altText={image.alt} width="300px" height="200px" />
@@ -22,18 +22,18 @@ const postURL = external.isExternal ? external.url : `/blog/${post.slug}`;
 
     <div class="article__content">
       <a href=`${postURL}`>
-        { pathName === '/' ? <h3>{title}</h3> : <h2>{title}</h2> }
+        <TitleHeading>{title} { external.isExternal ? <ExternalLink /> : '' }</TitleHeading>
       </a>
-      <p class="article__excerpt">{description}</p>
+      <p class="article__excerpt">{ description.split(" ").splice(0, 50).join(" ") }</p>
 
       <dl class="article__metadata">
-        <dt><i class="fa-solid fa-calendar-days" aria-hidden="true" title="Date"></i></dt>
-        <dd>{ pubDate.toLocaleDateString('en-GB', {
+        <dt><CalendarDays /></dt>
+        <dd><time datetime={ pubDate.toISOString() }>{ pubDate.toLocaleDateString('en-GB', {
           year: "numeric",
           month: "long",
           day: "numeric",
           timeZone: "UTC"
-        }) }</dd>
+        }) }</time></dd>
       </dl>
     </div>
   </article>

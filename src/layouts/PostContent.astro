@@ -6,7 +6,12 @@ const { frontmatter } = Astro.props;
 <MainLayout>
     <article class="post">
         <h1>{ frontmatter.title }</h1>
-
+        <p>Published on <time datetime={frontmatter.pubDate.toISOString()}>{frontmatter.pubDate.toLocaleDateString('en-GB', {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC"
+        })}</time></p>
         <slot />
     </article>
 </MainLayout>

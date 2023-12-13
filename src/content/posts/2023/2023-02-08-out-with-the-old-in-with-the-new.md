@@ -1,5 +1,6 @@
 ---
 title: Out with the old, in with the new
+slug: out-with-the-old-in-with-the-new
 pubDate: 2023-02-08
 description: In 2022, I decided to revamp my website and delve into the JAMstack. Out with the old and in with the new!
 author: Tommy Oldfield

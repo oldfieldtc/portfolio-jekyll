@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArticleList from "../../components/ArticleList.astro";
+
+const allPosts = await getCollection('posts');
+---
+<MainLayout title="Blog - ">
+    <h1>All posts</h1>
+    { allPosts.reverse().slice(0, 10).map(post => <ArticleList post={post} />) }
+</MainLayout>

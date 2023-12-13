@@ -1,5 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import MainLayout from "../layouts/MainLayout.astro";
+import Image from "../components/Image.astro";
+import ArticleList from "../components/ArticleList.astro";
+
+const posts = await getCollection("posts");
 ---
 
 <MainLayout>
@@ -12,16 +17,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 				You can read more about me and my work, but stick around for blog posts about tutorials and tech.
 			</p>
 		</div>
-		<picture class="home__headshot">
-			<source srcset="{{ site.assetUrl }}tommy-headshot.avif" type="image/avif">
-			<source srcset="{{ site.assetUrl }}tommy-headshot.webp" type="image/webp">
-			<img src="{{ site.assetUrl }}tommy-headshot.jpeg" alt="Tommy Oldfield">
-		</picture>
+		<Image className="home__headshot" filename="tommy-headshot" altText="Tommy Oldfield" />
 	</div>
 
 	<h2>Latest posts</h2>
-
-
+	{ posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />) }
 	<h2 id="work">Work</h2>
 	<div class="work__grid">
 

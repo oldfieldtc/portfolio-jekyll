@@ -1,5 +1,6 @@
 ---
 title: Extended reality (XR) on the web
+slug: extended-reality-on-the-web
 pubDate: 2023-11-30
 description: Extended reality (XR) is gaining more attention thanks to new headsets from Apple and Meta alongside AR apps like Snapchat and Pokémon Go on smartphones, but how can universities take advantage of this technology?
 author: Tommy Oldfield
