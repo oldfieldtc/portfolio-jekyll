@@ -1,9 +1,11 @@
 ---
 import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
+
+const title = `${frontmatter.title} - `;
 ---
 
-<MainLayout>
+<MainLayout title={title}>
     <article class="post">
         <h1>{ frontmatter.title }</h1>
         <p>Published on <time datetime={frontmatter.pubDate.toISOString()}>{frontmatter.pubDate.toLocaleDateString('en-GB', {
