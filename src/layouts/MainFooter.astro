@@ -10,8 +10,11 @@
         </ul>
 
         <p class="footer__copyright">
-            Copyright Tommy Oldfield 2019-2023 ©
+            Copyright &copy; Tommy Oldfield 2019-<span id="copyrightYear"></span>
         </p>
     </div>
-
 </footer>
+
+<script>
+    document.querySelector('#copyrightYear').textContent = new Date().getFullYear().toString();
+</script>
