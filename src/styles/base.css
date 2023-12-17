@@ -41,11 +41,6 @@ code {
 	box-sizing: border-box;
 }
 
-img, picture {
-	max-width: 100%;
-	display: block;
-}
-
 a:not([class]) {
 	text-decoration-skip-ink: auto;
 }

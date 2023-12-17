@@ -1,15 +1,16 @@
 ---
-// TODO: Make height, width, and className optional
+import '../styles/image.css';
+
 interface Props {
-    className: string;
-    width: string;
-    height: string;
+    className?: string;
+    width?: string;
+    height?: string;
     filename: string;
     altText: string;
 }
 
 const {
-    className = "",
+    className,
     width,
     height,
     filename = "",
@@ -18,8 +19,8 @@ const {
 const assetUrl : string = "https://assets.tommyoldfield.co.uk/";
 ---
 
-<picture class={className} width=`${width}` height=`${height}`>
+<picture {className}>
     <source srcset=`${assetUrl}${filename}.avif` type="image/avif">
     <source srcset=`${assetUrl}${filename}.webp` type="image/webp">
-    <img src=`${assetUrl}${filename}.jpeg` alt={altText} loading="lazy" width=`${width}` height=`${height}`>
+    <img src=`${assetUrl}${filename}.jpeg` alt={altText} loading="lazy" {width} {height}>
 </picture>
