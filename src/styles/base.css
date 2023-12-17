@@ -478,16 +478,6 @@ footer {
 	.header__wrapper, .container {
 		grid-column: 1 / -1;
 	}
-
-	.article__list {
-		grid-template-columns: 1fr 2fr;
-	}
-
-	.article__thumbnail {
-		& img {
-			height: auto;
-		}
-	}
 }
 
 /* Small screens */
@@ -566,12 +556,7 @@ footer {
 	}
 
 	/* Header */
-	/* Header */
 	.logo__text {
-		display: none;
-	}
-
-	.article__excerpt {
 		display: none;
 	}
 

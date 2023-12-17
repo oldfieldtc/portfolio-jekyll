@@ -21,3 +21,21 @@
         color: var(--sub-text);
     }
 }
+
+@media screen and (max-width: 992px){
+    .article__list {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .article__thumbnail {
+        & img {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .article__excerpt {
+        display: none;
+    }
+}
