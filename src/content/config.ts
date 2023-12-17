@@ -21,30 +21,6 @@ const postsCollection = defineCollection({
     })
 });
 
-const eventsCollection = defineCollection({
-    type: 'content',
-    schema: z.object({
-        title: z.string(),
-        description: z.string(),
-        date: z.date(),
-        relatedPosts: z.array(reference('events')).optional(),
-        author: reference('author')
-    })
-});
-
-const authorCollection = defineCollection({
-    type: 'data',
-    schema: ({image}) => z.object({
-        name: z.string(),
-        bio: z.string(),
-        email: z.string(),
-        role: z.enum(["Software", "Design", "Marketing"]),
-        headshot: image().optional()
-    })
-});
-
 export const collections = {
-    posts: postsCollection,
-    events: eventsCollection,
-    author: authorCollection
+    posts: postsCollection
 }

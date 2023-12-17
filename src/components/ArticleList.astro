@@ -1,7 +1,8 @@
 ---
 import Image from "./Image.astro";
 import type { CollectionEntry } from "astro:content";
-import { ExternalLink, CalendarDays } from "lucide-astro";
+
+import '../styles/article-list.css';
 
 type Props = {
   post: CollectionEntry<"posts">
@@ -21,13 +22,13 @@ const TitleHeading = pathName === '/' ? "h3" : "h2";
     </figure>
 
     <div class="article__content">
-      <a href=`${postURL}`>
-        <TitleHeading>{title} { external.isExternal ? <ExternalLink /> : '' }</TitleHeading>
-      </a>
+        <TitleHeading class="article__heading">
+            <a href=`${postURL}`>{title}</a>
+        </TitleHeading>
       <p class="article__excerpt">{ description.split(" ").splice(0, 50).join(" ") }</p>
 
       <dl class="article__metadata">
-        <dt><CalendarDays /></dt>
+        <dt></dt>
         <dd><time datetime={ pubDate.toISOString() }>{ pubDate.toLocaleDateString('en-GB', {
           year: "numeric",
           month: "long",

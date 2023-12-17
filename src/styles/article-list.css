@@ -1,0 +1,23 @@
+.article__list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.article__thumbnail {
+    & img {
+        box-shadow: var(--shadow);
+    }
+}
+
+.article__metadata {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    & dt, & dd {
+        margin-right: 5px;
+        color: var(--sub-text);
+    }
+}
