@@ -22,10 +22,9 @@ const posts = await getCollection("posts");
 
 	<h2>Latest posts</h2>
 	{ posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />) }
+
 	<h2 id="work">Work</h2>
 	<div class="work__grid">
 
 	</div>
-
-
 </MainLayout>

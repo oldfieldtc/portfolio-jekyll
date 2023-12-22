@@ -7,5 +7,23 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   output: "hybrid",
   adapter: cloudflare(),
-  integrations: [mdx()]
+  integrations: [mdx()],
+  redirects: {
+    '/portfolio/pinocchio': {
+      status: 301,
+      destination: '/work/cs50/'
+    },
+    '/portfolio/flack': {
+      status: 301,
+      destination: '/work/cs50/'
+    },
+    '/portfolio/biblio': {
+      status: 301,
+      destination: '/work/cs50/'
+    },
+    '/portfolio/dotahead': {
+      status: 301,
+      destination: '/work/cs50/'
+    }
+  }
 });

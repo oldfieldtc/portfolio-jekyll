@@ -1,0 +1,21 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import WorkContent from '../../layouts/WorkContent.astro';
+
+export async function getStaticPaths() {
+    const blogEntries = await getCollection('work');
+    return blogEntries.map(entry => ({
+        params: { slug: entry.slug }, props: { entry },
+    }));
+}
+
+type Props = {
+    entry: CollectionEntry<"work">;
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+<WorkContent frontmatter={ entry.data }>
+    <Content />
+</WorkContent>
