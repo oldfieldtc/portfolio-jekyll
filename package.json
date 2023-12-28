@@ -21,7 +21,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "img": "node src/sharp.js"
+    "img": "node tools/sharp.js"
   },
   "author": "Tommy Oldfield",
   "license": "ISC"
