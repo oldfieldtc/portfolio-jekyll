@@ -1,10 +1,13 @@
 ---
-name: University of St Andrews
-thumbnail: https://assets.tommyoldfield.co.uk/uofsta-thumbnail
+title: University of St Andrews
+description: An insight into the work I do at the University of St Andrews.
+image:
+    filename: uofsta-thumbnail
+    alt: University of St Andrews homepage shown on a laptop.
 slug: university-of-st-andrews
+tags: ["WordPress", "PHP", "TerminalFour", "JavaScript"]
 ---
 
-# University of St Andrews
 I'm incredibly lucky to work at the University of St Andrews as part of the [Digital Communications team](https://digitalcommunications.wp.st-andrews.ac.uk/) as a web developer since the beginning of 2020. I work on updating the website using TerminalFour, answer support calls, create and update collections in Funnelback, and work on the WordPress multisite, which includes developing and updating the University WordPress theme, and developing plugins.
 
 ## WordPress
