@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import MainMeta from "./MainMeta.astro";
 
 const { title, titleDescription } = Astro.props;
@@ -8,4 +9,5 @@ const { title, titleDescription } = Astro.props;
 
     <link rel="stylesheet" href="https://use.typekit.net/hke8rff.css">
     <title>{`${title} ${titleDescription}`}</title>
+    <ViewTransitions fallback="none"/>
 </head>
