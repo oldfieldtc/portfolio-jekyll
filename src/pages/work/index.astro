@@ -1,0 +1,13 @@
+---
+import {getCollection, getEntry} from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import WorkCard from "../../components/WorkCard.astro";
+
+const workEntries = await getCollection('work');
+---
+<MainLayout title="Work - ">
+    <h1>Work</h1>
+    {
+        workEntries.map(work => <WorkCard work={work} />)
+    }
+</MainLayout>
