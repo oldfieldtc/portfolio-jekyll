@@ -1,0 +1,14 @@
+---
+import Image from './Image.astro';
+import '../styles/card.css';
+
+const { url, filename, imageAlt, title, heading } = Astro.props;
+const TitleHeading = heading;
+---
+
+<div class="card__tile">
+    <a href={url}>
+        <Image className="card__thumbnail" filename={filename} altText={imageAlt} width="300px" height="200px" />
+        <TitleHeading>{title}</TitleHeading>
+    </a>
+</div>
