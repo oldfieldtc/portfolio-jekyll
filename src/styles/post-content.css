@@ -1,0 +1,10 @@
+article.post {
+    width: 80%;
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+    article.post {
+        width: 100%;
+    }
+}
