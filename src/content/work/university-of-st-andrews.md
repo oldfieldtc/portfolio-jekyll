@@ -16,7 +16,7 @@ The majority of my work at the University involves developing for and being resp
 ### University of St Andrews theme
 The University of St Andrews WordPress theme was built to create a visual consistency between the main University website and subsites on our multisite. The theme uses our [digital pattern library](https://www.st-andrews.ac.uk/dpl/) and is fully responsive and compliant with the current WCAG 2.1 AA accessibility guidelines.
 
-Bespoke child themes have also been developed for the [news](https://news.st-andrews.ac.uk/), [events](https://events.st-andrews.ac.uk/), and the [Accommodation, Conferences and Events](https://ace.st-andrews.ac.uk/) site.
+Bespoke child themes have also been developed for the [news](https://news.st-andrews.ac.uk/), [events](https://events.st-andrews.ac.uk/), and the [IT Services](https://itservices.wp.st-andrews.ac.uk/) site.
 
 ### Plugins
 #### Multisite audit
