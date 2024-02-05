@@ -1,15 +1,11 @@
 .card__tile {
     display: block;
-
-    max-width: 300px;
-    min-width: 100px;
-    max-height: 205px;
-    /*height: auto;*/
-
-    margin: 10px 10px 20px 10px;
-    position: relative;
+    margin-bottom: 10px;
     box-shadow: var(--shadow);
-    overflow: hidden;
+}
+
+.card__link {
+    position: relative;
     text-align: center;
 
     & img {
@@ -17,7 +13,7 @@
         height: auto;
     }
 
-    & h3 {
+    & h2, & h3 {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -26,29 +22,27 @@
         opacity: 0.95;
         margin: 0;
         color: white;
-        padding: 10px 0;
+        padding: 10px;
+        font-size: 1.1em;
     }
-    &:hover h3{
+
+    &:hover h2, &:hover h3 {
         background: var(--navy);
         opacity: 1;
     }
 
-    &:focus-within{
-        box-shadow: 0 0 0 5px var(--navy);
+    &:focus-within {
+        outline: 5px solid var(--navy);
 
-        & h3 {
+        & h2, & h3 {
             background: var(--navy);
             opacity: 1;
         }
     }
+}
 
-    &:nth-child(3) {
-        margin-right: 0;
-    }
-
-    &:nth-child(3n+1) {
-        margin-left: 0;
-    }
+.card__description {
+    padding: 10px 10px 0 10px;
 }
 
 @media screen and (max-width: 768px) {

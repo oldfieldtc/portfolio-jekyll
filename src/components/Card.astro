@@ -1,14 +1,34 @@
 ---
+import {CollectionEntry} from "astro:content";
 import Image from './Image.astro';
 import '../styles/card.css';
 
-const { url, filename, imageAlt, title, heading } = Astro.props;
+// This might not work. My idea is to have a flexible component that can handle any content
+// collection. Although it seems to work with the 'work' collection!
+const { collection } = Astro.props;
+interface Props {
+    content: CollectionEntry<{collection}>
+}
+
+const { content, heading, showDescription } = Astro.props;
+const { slug } = content;
+const { image, title, description } = content.data;
+const url = content.url ? content.url : `/${collection}/${slug}`;
 const TitleHeading = heading;
 ---
 
 <div class="card__tile">
-    <a href={url}>
-        <Image className="card__thumbnail" filename={filename} altText={imageAlt} width="300px" height="200px" />
-        <TitleHeading>{title}</TitleHeading>
-    </a>
+    <div class="card__link">
+        <a href={url}>
+            <Image className="card__thumbnail" filename={image.filename} altText={image.alt} width="300px" height="200px" />
+            <TitleHeading>{title}</TitleHeading>
+        </a>
+    </div>
+    {
+        showDescription && (
+            <div class="card__description">
+                <p>{description}</p>
+            </div>
+        )
+    }
 </div>

@@ -32,7 +32,7 @@ const cards = [
 	<h2 id="work">Work</h2>
 	<div class="work__grid">
 		{
-			cards.map(element => <Card url=`work/${element.slug}` heading="h3" title={element.data.title} filename={element.data.image.filename} imageAlt={element.data.image.alt} />)
+			cards.map(element => <Card content={element} collection="work" showDescription={false} heading="h3"/>)
 		}
 	</div>
 </MainLayout>
