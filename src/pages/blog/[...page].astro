@@ -10,9 +10,21 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
+const pathName = Astro.url.pathname.split('/');
+const firstPath = pathName[1];
+
 ---
 <MainLayout title="Blog - ">
     <h1>All posts</h1>
     { page.data.map(post => <ArticleList post={post} />) }
-    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+    <Pagination
+            prevUrl={page.url.prev}
+            nextUrl={page.url.next}
+            currentUrl={page.url.current}
+            currentPageNumber={page.currentPage}
+            lastPageNumber={page.lastPage}
+            firstUrl="/blog"
+            lastUrl={`/blog/${page.lastPage}`}
+            class="blog-pagination"
+    />
 </MainLayout>

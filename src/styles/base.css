@@ -4,6 +4,7 @@
 	--blue_accent: #4059B5;
 	--white: rgb(252, 252, 252);
 	--off_white: rgb(237, 235, 235);
+	--mid_grey: rgb(208, 208, 208);
 	--sub-text: #6A6A6A;
 	--center: 960px;
 	--font_head: montserrat;
@@ -71,14 +72,14 @@ body {
 		color: #2a4bb7;
 		text-decoration: none;
 	}
-	& a:active {
-		color: #2a4bb7;
-	}
 	& a:focus {
 		outline: 2px solid var(--navy);
 		background-color: var(--navy);
 		color: white;
 		text-decoration: none;
+	}
+	& a:active {
+		color: #2a4bb7;
 	}
 
 	& h1, & h2, & h3, & h4, & h5, & h6 {
