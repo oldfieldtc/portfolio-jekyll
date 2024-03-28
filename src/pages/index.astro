@@ -28,10 +28,10 @@ const cards = [
 
 	<h2>Latest posts</h2>
 	{
-		// This shows the correct blog posts (date descending) when built, but not in dev.....
-		// The reverse version is correct in dev but not when built. Swap when necessary
+		/* This shows the correct blog posts (date descending) when built, but not in dev.....
+		The reverse version is correct in dev but not when built. Swap when necessary
+		posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />) */
 		posts.slice(0, 3).map(post => <ArticleList post={post} />)
-		// posts.reverse().slice(0, 3).map(post => <ArticleList post={post} />);
 	}
 
 	<h2 id="work">Work</h2>
