@@ -8,6 +8,8 @@ import '../styles/card.css';
 const { collection } = Astro.props;
 interface Props {
     content: CollectionEntry<{collection}>
+    heading: string
+    showDescription: boolean
 }
 
 const { content, heading, showDescription } = Astro.props;
